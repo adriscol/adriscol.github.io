@@ -1,0 +1,21 @@
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+.w3-wide {letter-spacing: 7px;}
+.w3-hover-opacity {cursor: pointer;}
+
+a[href^="tel:"], a[href^="mailto:"] {
+    text-decoration: none;
+}
+
+/* Turn off navigation bar for printing */
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}

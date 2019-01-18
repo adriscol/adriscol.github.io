@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>EFES Group - Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="efes.css">
+<script src="efes.js"></script>
+<style>
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url("images/EFES_Group.jpeg");
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/Calorimeter.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/Engineering Building.jpg");
+    min-height: 400px;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top no-print">
+  <div class="w3-bar w3-card w3-white" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-navicon"></i>
+    </a>
+    <a href="index.htm" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i> HOME</a>
+    <a href="index.htm#research" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-book fa-fw"></i> RESEARCH</a>
+    <a href="index.htm#teaching" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-certificate fa-fw"></i> TEACHING</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-hide-small"><i class="fa fa-group fa-fw"></i> PEOPLE <i class="fa fa-caret-down fa-fw"></i></button>
+      <div class="w3-dropdown-content w3-bar-block bottom-0">
+        <a href="about.htm" class="w3-bar-item w3-button"><i class="fa fa-info-circle fa-fw"></i> ABOUT ME</a>
+        <a href="team.htm" class="w3-bar-item w3-button"><i class="fa fa-id-card fa-fw"></i> TEAM MEMBERS</a>
+        <a href="alumni.htm" class="w3-bar-item w3-button"><i class="fa fa-graduation-cap fa-fw"></i> ALUMNI</a>
+      </div>
+    </div>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope fa-fw"></i><span class="w3-hide-medium w3-hide-small"> CONTACT</span></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="index.htm#research" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-book fa-fw"></i> RESEARCH</a>
+    <a href="index.htm#teaching" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-certificate fa-fw"></i> TEACHING</a>
+    <a href="about.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-info-circle fa-fw"></i> ABOUT ME</a>
+    <a href="team.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-id-card fa-fw"></i> TEAM MEMBERS</a>
+    <a href="alumni.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-graduation-cap fa-fw"></i> ALUMNI</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope fa-fw"></i> CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min no-print" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-wide w3-padding-large w3-black w3-xlarge w3-animate-opacity"><span class="w3-hide-medium w3-hide-small">ENVIRONMENTALLY FRIENDLY ENGINEERED SYSTEMS</span><span class="w3-hide-large">EFES LAB</span></span>
+  </div>
+</div>
+
+<!-- Container (Mission Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">OUR MISSION</h3>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-justify">
+      <p>Our mission is to address a range of fundamental and applied challenges to provide sustainable and innovative solutions through green engineering, chemistry, and systems engineering. We utilize global methods at different temporal and spatial scales, product prototyping, process piloting and experimentation for thermo-physical properties as well as governing fundamental phenomena.</p>
+      <p>Recent projects include design of environmentally friendly pathways for development of novel materials including nano-structured photo-catalysts and energetic particles, value-added products including those that involve temperature modulation and therapeutics, biomass conversion processes that utilize supercritical fluids, and development of multi-scale operation policies for waste resource management.</p>
+    </div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="images/AKS.jpg" class="w3-round w3-image" alt="Dr. Aydin K. Sunol" width="236" height="272">
+      <p>
+        <b>Dr. Aydin K. Sunol</b><br>
+        (<a href="CV.pdf"><i class="fa fa-file-pdf-o fa-fw"></i>Curriculum Vitae</a>)
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Research Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min no-print">
+  <div class="w3-display-middle">
+    <span class="w3-center w3-wide w3-padding-large w3-black w3-xlarge">RESEARCH</span>
+  </div>
+</div>
+
+<!-- Container (Research Section) -->
+<div class="w3-content w3-container w3-padding-64" id="research">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center"><em>Systems Engineering, Process and Product Design, Green Engineering, Supercritical Fluid Technology</em></p>
+  <hr>
+  <p class="w3-justify">Our research group focuses on enabling sciences and technologies that form a transformational basis for development of novel engineered systems and aim to provide sustainable solutions to current societal concerns. Green pathways, utilizing supercritical carbon dioxide and water, and global computational methods&mdash;such as genetic programming, finite elements, Monte Carlo simulation, mixed integer linear programming, and homotopy continuation methods&mdash;shape our integrated experimental and computational approach. The current themes are:
+    <ul class="w3-justify">
+      <li>Synthesis of Nano-structured particles for energy storage and delivery, targeted delivery of therapeutics, and catalysis. Supercritical fluids are used for deposition, template removal, drying, foaming and encapsulation in design and development of portfolio of nano-structured functional material. Sponsored by NASA, DOD, and FHTC.</li>
+      <li>Design and Development of Self Heating and Cooling Products: Novel products with temperature modulation capability are developed. Smart polymers, phase change materials, reaction modulation, particle encapsulation, self assembly and CAD modeling are enabling elements utilized. Sponsored by Donovan Industries, TempTroll and Florida High Tech Counsel (FHTC).</li>
+      <li>Fractionation of Chiral compound, isolation of medically active components such as neutraceuticals, extraction of clean fuels from natural matrices such as algal biomass using supercritical fluids, and development of intensified pathways for conversion of waste to fuels such as biodiesel. Global phase diagrams with reliable computational methods, coupled with well designed property measurements, provide an effective fundamental basis for development of these green processes. Sponsored by USF and CERC.</li>
+      <li>Development of multi-scale operational policies and management systems for wastewater. Sponsored by Hillsborough County Public Utilities Department.
+    </ul>
+  </p>
+  <div class="w3-center no-print">
+    <a href="#" class="w3-button w3-padding-large w3-light-grey w3-center">LEARN MORE</a>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Academic Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min no-print">
+  <div class="w3-display-middle">
+     <span class="w3-center w3-wide w3-padding-large w3-black w3-xlarge">ACADEMICS</span>
+  </div>
+</div>
+
+<!-- Container (Teaching Section) -->
+<div class="w3-content w3-container w3-padding-64" id="teaching">
+  <h3 class="w3-center">TEACHING ACTIVITIES</h3>
+  <p class="w3-justify">Over the years, I enjoyed teaching and developing new courses, both at the undergraduate and graduate levels. My regular teaching assignment has been the <b>capstone design series</b> that evolved from process design to incorporate product design principles. The list includes:
+  <h4 class="w3-center">UNDERGRADUATE COURSES</h3>
+  <table class="w3-table w3-card-4">
+    <tr class="w3-green">
+      <th>Crs #</th>
+      <th>Course Title</th>
+      <th>Semester</th>
+    </tr>
+    <tr>
+      <td>ECH&nbsp;4605</td>
+      <td><a href="Courses/PnP.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i>Product and Process Systems Engineering</a></td>
+      <td>Fall</td>
+    </tr>
+    <tr>
+      <td>ECH&nbsp;4615</td>
+      <td><a href="Courses/PlantDesign.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i>Product and Process Design</a></td>
+      <td>Spring</td>
+    </tr>
+  </table>
+  <p class="w3-justify"><u>Additional courses</u>: Separation Processes and Phase Equilibrium, Mass Transfer, Unit Operations Laboratory, Process Engineering Laboratory, Foundations of Engineering</p>
+  <h4 class="w3-center">GRADUATE COURSES</h3>
+  <table class="w3-table w3-card-4">
+    <tr class="w3-green">
+      <th>Crs #</th>
+      <th>Course Title</th>
+      <th>Semester</th>
+    </tr>
+    <tr>
+      <td>ECH&nbsp;6840</td>
+      <td><a href="Courses/MathMethods.pdf" target="_blank"><i class="fa fa-file-pdf-o fa-fw"></i>Mathematical Methods for Chemical Engineering</a></td>
+      <td>Fall</td>
+    </tr>
+  </table>
+  <p class="w3-justify"><u>Additional courses</u>: Computer Aided Process Engineering I (Steady-State Processes) & II (Un-Steady State Processes), Advanced Separation Processes and Phase Equilibrium, Advanced Reaction Engineering, Applied Computer Algebra for Engineers and Physical Sciences, Process Systems Engineering Laboratory, Advanced Thermodynamics, Green Engineering</p>
+  <hr>
+  <p class="w3-justify">The development activity included <em>Web-based Teaching Modules</em> and <em>Design Course Series for Spiral Chemical Engineering Curriculum</em>, both funded by NSF. I also organized and directed a NATO Advanced Study Institute on Batch Processing Systems. Continuing education courses on Computer Aided Process Design (1986-90) and Artificial Intelligence (1988-90) were also developed and taught globally.</p>
+</div>
+
+<!-- Footer -->
+<footer class="w3-black w3-padding-64 w3-opacity w3-hover-opacity-off no-print">
+  <div class="w3-container w3-row" id="contact">
+    <div class="w3-col m4">
+      <span class="w3-left" style="font-size: 40px;"><i class="fa fa-map-marker fa-fw"></i></span>
+      <div class="w3-content" style="margin-left: 60px;">
+        Aydin K. Sunol, PhD<br>
+        4202 E. Fowler Ave., ENB&nbsp;118<br>
+        Tampa, FL 33620
+      </div>
+    </div>
+    <div class="w3-col m4">
+      <span class="w3-left" style="font-size: 40px;"><i class="fa fa-envelope fa-fw"></i></span>
+      <div class="w3-content" style="margin-left: 60px; margin-top: 10px;">
+        Email:<br>
+        <a href="mailto:asunol@usf.edu">asunol@usf.edu</a>
+      </div>
+    </div>
+    <div class="w3-col m4">
+      <span class="w3-left" style="font-size: 40px;"><i class="fa fa-phone fa-fw"></i></span>
+      <div class="w3-content" style="margin-left: 60px; margin-top: 10px;">
+        Phone:<br>
+        <a href="tel:+18139743566">(813) 974-3566</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Move to top of page button -->
+<span class="no-print w3-hide" style="position: fixed; right: 15px; bottom: 15px;" id="topLink" onmouseover="mouseOver()" onmouseout="mouseOut()">
+  <a href="#">
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x" id="topButton"></i>
+      <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</span>
+
+</body>
+</html>
