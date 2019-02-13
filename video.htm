@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>Aaron Driscoll - Video</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="adriscol.css">
+<script src="adriscol.js"></script>
+<style>
+</style>
+
+
+<body>
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top no-print">
+  <div class="w3-bar w3-card w3-white" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-navicon"></i>
+    </a>
+    <a href="index.htm" class="w3-bar-item w3-button" title="Home"><i class="fa fa-home fa-fw"></i> Home</a>
+    <a href="curriculum-vitae.htm" class="w3-bar-item w3-button w3-hide-small" title="Curriculum Vitae"><i class="fa fa-file-text fa-fw"></i> C<span class="w3-hide-medium">urriculum </span>V<span class="w3-hide-medium">itae</span></a>
+    <a href="teaching-philosophy.htm" class="w3-bar-item w3-button w3-hide-small" title="Teaching Philosophy"><i class="fa fa-graduation-cap fa-fw"></i><span class="w3-hide-medium"> Teaching</span> Philosophy</a>
+    <a href="narrative.htm" class="w3-bar-item w3-button w3-hide-small" title="Narrative"><i class="fa fa-book fa-fw"></i> Narrative</a>
+    <a href="innovation.htm" class="w3-bar-item w3-button w3-hide-small" title="Innovation &amp; Success"><i class="fa fa-trophy fa-fw"></i> Innovation<span class="w3-hide-medium"> &amp; Success</span></a>
+    <a href="student-evaluations.htm" class="w3-bar-item w3-button w3-hide-small" title="Student Evaluations"><i class="fa fa-bar-chart fa-fw"></i><span class="w3-hide-medium"> Student</span> Evaluations</a>
+    <a href="video.htm" class="w3-bar-item w3-button w3-hide-small" title="Video"><i class="fa fa-youtube-play fa-fw"></i> Video</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-right" title="Contact"><i class="fa fa-envelope fa-fw"></i><span class="w3-hide-medium"> Contact</span></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
+    <a href="curriculum-vitae.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-file-text fa-fw"></i> Curriculum Vitae</a>
+    <a href="teaching-philosophy.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-graduation-cap fa-fw"></i> Teaching Philosophy</a>
+    <a href="narrative.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-book fa-fw"></i> Narrative</a>
+    <a href="innovation.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-trophy fa-fw"></i> Innovation &amp; Success</a>
+    <a href="student-evaluations.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-bar-chart fa-fw"></i> Student Evaluations</a>
+    <a href="video.htm" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-youtube-play fa-fw"></i> Video</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()"><i class="fa fa-envelope fa-fw"></i> Contact</a>
+  </div>
+</div>
+
+
+<!-- Container  -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">Welcome to my Teaching Portfolio</h3>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-justify">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ullamcorper velit vel tincidunt venenatis. Mauris eu est metus. Donec pellentesque, neque nec sodales congue, dui urna mollis leo, at sodales augue odio ac ante. Nunc rhoncus ex non augue finibus condimentum. Nullam venenatis vulputate libero, et auctor felis tristique in. Aenean justo risus, egestas et vehicula eget, interdum nec arcu. Donec non purus eu purus sagittis convallis.</p>
+      <p>Nulla congue sit amet nisi vitae ultricies. Ut sit amet nisi in justo vehicula ornare nec ut tortor. Maecenas ac gravida neque, rutrum eleifend massa. Nulla viverra vel mi a semper. Ut quis leo dolor. Donec mi ante, lacinia tempus nisl in, sollicitudin facilisis risus. Donec id eros tincidunt augue vestibulum dapibus nec et elit.</p>
+    </div>
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="images/Aaron.jpg" class="w3-round w3-image" alt="Aaron Driscoll" width="236" height="272">
+      <p>
+        <b>Aaron Driscoll</b><br>
+        (<a href="CV.pdf"><i class="fa fa-file-pdf-o fa-fw"></i>Curriculum Vitae</a>)
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-black w3-padding-24 w3-opacity w3-hover-opacity-off no-print">
+  <div class="w3-container w3-row" id="contact">
+    <div class="w3-col m6">
+      <span class="w3-left" style="font-size: 40px;"><i class="fa fa-map-marker fa-fw"></i></span>
+      <div class="w3-content" style="margin-left: 60px;">
+        Aaron Driscoll<br>
+        Department of Chemical &amp; Biomedical Engineering<br>
+        University of South Florida<br>
+        Tampa, FL 33620
+      </div>
+    </div>
+    <div class="w3-col m6">
+      <span class="w3-left" style="font-size: 40px;"><i class="fa fa-envelope fa-fw"></i></span>
+      <div class="w3-content" style="margin-left: 60px; margin-top: 10px;">
+        Email:<br>
+        <a href="mailto:adriscol@mail.usf.edu">adriscol@mail.usf.edu</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Move to top of page button -->
+<span class="no-print w3-hide" style="position: fixed; right: 15px; bottom: 15px;" id="topLink" onmouseover="mouseOver()" onmouseout="mouseOut()">
+  <a href="#">
+    <span class="fa-stack fa-2x">
+      <i class="fa fa-circle fa-stack-2x" id="topButton"></i>
+      <i class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+    </span>
+  </a>
+</span>
+
+
+</body>
+</html>
